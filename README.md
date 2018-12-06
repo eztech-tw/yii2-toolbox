@@ -22,5 +22,11 @@ php composer.phar require --prefer-dist eztech-tw/yii2-toolbox "*"
 
 到你的 `composer.json` 檔案中
 
-使用
-----
+索引
+====
+
+* [MySQL的Json格式，讓浮動欄位被簡易處理](docs\mysqlJson.md)
+
+
+
+* [資料格式化工具](docs\EzFormatter.md) eztechtw\toolbox\EzFormatter
