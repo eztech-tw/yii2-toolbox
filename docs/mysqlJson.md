@@ -54,7 +54,7 @@ class Message extends JsonModel
 ```` 
 而若想要於欄位中直接顯示整個 Json 字串時，請先安裝
 
-* [資料格式化工具](docs\EzFormatter.md) eztechtw\toolbox\EzFormatter
+* [資料格式化工具](docs/EzFormatter.md) eztechtw\toolbox\EzFormatter
 
 安裝後即可如下使用 arrayjson 自動格式
 
