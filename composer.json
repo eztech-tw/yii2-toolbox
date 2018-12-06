@@ -1,0 +1,21 @@
+{
+    "name": "eztech-tw/yii2-toolbox",
+    "description": "EzTech Yii2 Toolbox",
+    "type": "library",
+    "keywords": ["EzTech","yii2","extension"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "scott1984",
+            "email": "scott1984@gmail.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "eztechtw\\toolbox\\": ""
+        }
+    }
+}
