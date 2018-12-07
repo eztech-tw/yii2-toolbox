@@ -39,7 +39,7 @@ GridView::widget([
 於ArrayHelper亦可直接指定
 
 ````php
-$array = ArrayHelper::map($datas, 'payload.title','payload.body);
+$array = ArrayHelper::map($datas, 'payload.title','payload.body');
 ````
 
 為避免如 Api 呼叫時，傳入 Json 字串，以 ``$model->load()`` 方式載入時，將被再次編碼的問題，可直接將 Model 直接繼承

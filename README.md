@@ -25,8 +25,8 @@ php composer.phar require --prefer-dist eztech-tw/yii2-toolbox "*"
 索引
 ====
 
-* [MySQL的Json格式，讓浮動欄位被簡易處理](docs/mysqlJson.md)
+* [MySQL的Json格式，讓資料欄位被簡易處理](docs/mysqlJson.md)
 
+* [資料格式化工具](docs/EzFormatter.md) ``eztechtw\toolbox\EzFormatter extends \yii\i18n\Formatter``
 
-
-* [資料格式化工具](docs/EzFormatter.md) eztechtw\toolbox\EzFormatter
+* [markdown文件顯示](docs/Docs.md) ``eztechtw\toolbox\doc\DocsAction extends Action``
