@@ -32,6 +32,23 @@ class SiteController extends Controller
 如果改寫路由的話：
 ````php
 'urlManager' => [
+    'rules' => [
+        "docs/<path:.+>" => "site/doc", #轉送指定路徑
+    ],
+],
+````
+
+``"docs/<path:.+>" => "site/doc"``意思即為，將``docs/``開頭的路由，轉送到``site/doc``這個Action，
+並把``docs/``後面的所有文字做為``$path``這個GET參數傳入Acion中，例如：
+
+* ``https://example.com/index.php?r=docs/index.md`` 即會載入 ``@app/docs/index.md`` 並顯示
+
+----
+
+如果網站打開``enablePrettyUrl``，且設定好Rewrite Rules，則路徑可以更為簡潔：
+
+````php
+'urlManager' => [
     'enablePrettyUrl' => true,
     'enableStrictParsing' => true,
     'showScriptName' => false,
@@ -43,13 +60,6 @@ class SiteController extends Controller
     ],
 ],
 ````
-
-``"docs/<path:.+>" => "site/doc"``意思即為，將``docs/``開頭的路由，轉送到``site/doc``這個Action，
-並把``docs/``後面的所有文字做為``$path``這個GET參數傳入Acion中，例如：
-
-* ``https://example.com/index.php?r=docs/index.md`` 即會載入 ``@app/docs/index.md`` 並顯示
-
-如果網站打開``enablePrettyUrl``，則路徑可以更為簡潔：
 
 * ``https://example.com/docs/index.md`` 即會載入 ``@app/docs/index.md`` 並顯示
 
