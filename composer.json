@@ -12,7 +12,8 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "erusev/parsedown": "^1.7"
+        "erusev/parsedown": "^1.7",
+        "yiisoft/yii2-authclient": "~2.1.0"
     },
     "autoload": {
         "psr-4": {
